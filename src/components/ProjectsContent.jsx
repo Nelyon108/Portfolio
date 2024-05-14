@@ -57,7 +57,7 @@ const ProjectsContent = forwardRef((props, ref) => {
                 <span variant="pills" /*defaultActiveKey="/home"*/>
                 </span>
             </div>
-            <div className='skillsList'>
+            <div className='projectList'>
                 {project}
 
                 <div className='projectContainer'>

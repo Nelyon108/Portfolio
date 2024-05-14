@@ -181,17 +181,44 @@ a, ul, li{
 .skillsList{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 1rem;
   width: 90%;
+  height: min-content;
+  max-height: 100vh;
+  gap: 2rem;
 }
-.skillsList span{
-  /* width: 6.5rem; */
-  width: 4rem;
+.skillsList div{
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  gap: 1rem;
+  width: 20rem;
+}
+
+.skillsList div span{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .skillsList p{
   font-weight: bold;
+}
+
+.skillsList .progressSlider{
+  background: var(--overlay-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+  width: 11rem;
+  height: 0.5rem;
+}
+.skillsList .sliderInner{
+  background: var(--deeper-color);
+  border: none;
+  border-radius: 1rem;
+  height: 100%;
 }
 
 .skillsImage{
@@ -206,6 +233,15 @@ a, ul, li{
   display: flex;
   flex-direction: column;
 }
+.projectList{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 90%;
+}
+
 .projects{
   width: 15rem;
   height: 15rem;
@@ -338,7 +374,7 @@ a, ul, li{
 .aboutBox{
   display: flex;
   flex-direction: row;
-  
+  line-height: 1.7;
 }
 
 .aboutBox span{
@@ -349,7 +385,8 @@ a, ul, li{
 
 @media (max-width: 800px) {
   .skillsList{
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
   }
 
   .selfImage, .pulse{
@@ -388,5 +425,12 @@ a, ul, li{
   .header{
     flex-direction: column;
     align-items: center;
+  }
+  .aboutBox{
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutBox span{
+    width: 100%;
   }
 }
