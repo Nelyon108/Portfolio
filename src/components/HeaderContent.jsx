@@ -7,7 +7,7 @@ import background from "../assets/techBack.jpg"
 const HeaderContent = forwardRef((props, ref) => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Backend Developer", "Mobile Developer"];
+    const toRotate = ["FullStack Developer", "Web Developer", "Backend Developer", "Mobile Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 1500;
