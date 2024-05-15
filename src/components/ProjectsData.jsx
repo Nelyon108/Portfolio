@@ -1,6 +1,7 @@
 import scicrypt from '../assets/scicrypt.png'
 import assignMe from '../assets/assignMe.png'
 import ugchub from '../assets/ugchub.png'
+import iamslime from '../assets/iamslime.jpg'
 
 
 export const ProjectData = [
@@ -49,6 +50,7 @@ export const ProjectData = [
         name: "IAmSlime",
         description: "A cross-platform 2D platformer game",
         projectLink: "",
+        imageUrl: iamslime,
     },
     
                         
