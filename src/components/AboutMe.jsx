@@ -11,7 +11,7 @@ const AboutMe = forwardRef((props, ref) => {
                     </span>
                     <span>
                         <p>Phone number: +233 (0)24 020 5963 / +233 (0)50 93 44 711</p>
-                        <a href="mailto:nelson.allen0@gmail.com"><p>Email address: nelson.allen0@gmail.com</p></a>
+                        <a href="mailto:nelson.allen0@gmail.com"><p><i className='fa plus'></i>Email address: nelson.allen0@gmail.com</p></a>
                         <a href="www.linkedin.com/in/nelson-allen-35b059169" target='_blank'><p>LinkedIn: www.linkedin.com/in/nelson-allen-35b059169</p></a>
                         <a href="https://github.com/Nelyon108" target='_blank'><p>Github: https://github.com/Nelyon108</p></a>
                         <p>Location: Ghana - Accra</p>

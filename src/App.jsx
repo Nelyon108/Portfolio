@@ -5,6 +5,7 @@ import HeaderContent from './components/HeaderContent'
 import SkillsContent from './components/SkillsContent'
 import ProjectsContent from './components/ProjectsContent'
 import AboutMe from './components/AboutMe'
+import Contact from './components/Contact'
 
 function App() {
   const [activeLink, setActiveLink] = useState('home');
@@ -48,7 +49,7 @@ function App() {
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
   const aboutMeRef = useRef(null);
-
+  const contactRef = useRef(null);
 
 
 
@@ -59,11 +60,13 @@ function App() {
         skillsRef={skillsRef}
         projectsRef={projectsRef}
         aboutMeRef={aboutMeRef}
+        // contactRef={contactRef}
       />
       <HeaderContent ref={headerRef}/>
       <AboutMe ref={aboutMeRef}/>
       <SkillsContent ref={skillsRef}/>
       <ProjectsContent ref={projectsRef}/>
+      {/* <Contact ref={contactRef}/> */}
     </>
   )
 }

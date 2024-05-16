@@ -1,4 +1,4 @@
-import React, { forwardRef, useImperativeHandle, useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import { ProjectData } from './ProjectsData';
 
 
@@ -60,7 +60,7 @@ const ProjectsContent = forwardRef((props, ref) => {
             <div className='projectList'>
                 {project}
 
-                <div className='projectContainer'>
+                {/* <div className='projectContainer'>
                     <div className={hover === "second" ? "hover projects" : "projects"}>
                         <p className='projectText'>H1 i wanna do the things finish what tro do</p>
                     </div>
@@ -76,7 +76,7 @@ const ProjectsContent = forwardRef((props, ref) => {
                         </a>
                         <a href="https://github.com/" target='_blank' className='shake'>See Git Repo</a>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </div>

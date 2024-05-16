@@ -18,7 +18,7 @@ const SkillsContent = forwardRef((props, ref) => {
       <span className='bigFont'>Skills</span>
       {/* <span><p className='mediumFont'>What am I great at?</p></span> */}
       <div className='skillsList'>
-        <div><img src={django} alt="Django" className='skillsImage' /><span><p>Django</p><p className='progressSlider'><p className='sliderInner' style={{ width: "100%" }}><p className='animation'></p></p></p></span></div>
+        <div><img src={django} alt="Django" className='skillsImage' /><span><p>Django</p><p className='progressSlider'><p className='sliderInner' style={{ width: "100%" }}></p></p></span></div>
         <div><img src={java} alt="" className='skillsImage' /><span><p>Java</p><p className='progressSlider'><p className='sliderInner' style={{ width: "70%" }}></p></p></span></div>
         <div><img src={react} alt="React" className='skillsImage' /><span><p>React</p><p className='progressSlider'><p className='sliderInner' style={{ width: "70%" }}></p></p></span></div>
         <div><img src={web} alt="Web Dev" className='skillsImage' /><span><p>Web Development</p><p className='progressSlider'><p className='sliderInner' style={{ width: "100%" }}></p></p></span></div>

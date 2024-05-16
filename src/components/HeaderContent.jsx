@@ -43,6 +43,10 @@ const HeaderContent = forwardRef((props, ref) => {
     
 }
 
+// const scrollToSection = () => {
+//     window.current?.scrollIntoView({block: "end", behavior: "smooth" });
+// };
+
   return (
     <div className='header' ref={ref}>
         {/* <div className='backgroundImg'>
@@ -51,7 +55,7 @@ const HeaderContent = forwardRef((props, ref) => {
         <div className='headerContent'>
             <span className='wrap bigFont'>Hi, My name is <h2>NELSON ALLEN</h2></span>
             <span className='wrap bigFont'>I am a <span className='diffTextCol'>{text}</span></span>
-            <button>Let's Connect</button>
+            <a href="#contact"><button>Let's Connect</button></a>
         </div>
         <span className='selfImageBox'>
             <img src={selfImage} alt="selfImage" className='selfImage'/>

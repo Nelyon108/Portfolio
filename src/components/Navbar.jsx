@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import logo from "../assets/react.svg";
 
-export default function Navbar({ headerRef, skillsRef, projectsRef, aboutMeRef }) {
+export default function Navbar({ headerRef, skillsRef, projectsRef, aboutMeRef}) {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
@@ -41,7 +41,7 @@ export default function Navbar({ headerRef, skillsRef, projectsRef, aboutMeRef }
     };
     // window.scrollIntoView({ top: 5,behavior: "smooth" })
     const scrollToSection = (ref) => {
-            ref.current?.scrollIntoView({block: "end", behavior: "smooth" });
+            ref.current?.scrollIntoView({block: "center", behavior: "smooth" });
     };
 
     return (
@@ -56,9 +56,7 @@ export default function Navbar({ headerRef, skillsRef, projectsRef, aboutMeRef }
                 <a href="#projects" className={activeLink === "projects" ? 'active navbarLink' : "navbarLink"} onClick={() => {scrollToSection(projectsRef), onUpdateActiveLink('projects')}}><span>Projects</span></a>
             </div>
 
-            <button className='connectBtn'  onClick={() => console.log('connect')}>
-                <span>Let's Connect</span>
-            </button>
+            <a href="#contact" className='connectBtn'><button>Let's Connect</button></a>
         </div>
     );
 }
