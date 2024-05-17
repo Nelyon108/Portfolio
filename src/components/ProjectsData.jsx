@@ -68,7 +68,7 @@ export const ProjectData = [
     },
     {
         id: "python",
-        name: "Some Python Projects",
+        name: "Other Python Projects",
         description: "This repo contains other projects made in python. There include an image recognition app in kivy, Youtube downloader, and a simple weather app",
         projectLink: "https://github.com/Nelyon108/Python/",
         gitLink: "https://github.com/Nelyon108/Python/",
