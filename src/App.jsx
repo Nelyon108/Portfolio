@@ -7,6 +7,7 @@ import ProjectsContent from './components/ProjectsContent'
 import AboutMe from './components/AboutMe'
 import Contact from './components/Contact'
 
+
 function App() {
   const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);

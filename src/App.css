@@ -24,7 +24,9 @@
 /* .wrap h2{
   color: var(--primary-color)
 } */
-
+.icon{
+  color: var(--deeper-color);
+}
 a, ul, li{
   text-decoration: none;
   list-style: none;
